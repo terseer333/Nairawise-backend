@@ -42,3 +42,16 @@ app.get("/api/categories", async (req, res) => {
   },
   "include": ["server/**/*"]
 }
+
+# NairaWise Backend
+
+This is the **Node.js + Express** backend (written in TypeScript) for the NairaWise app. It defines API endpoints in `server/index.ts` and `server/routes.ts`.
+
+## Setup
+
+- **Node.js:** Ensure Node.js (v18 or higher) is installed.
+- **Install dependencies:** Run `npm install` in the project directory.
+- **Development:** Start the server with `npm run dev` (uses `ts-node` to run TypeScript directly).
+- **Production:** Build and run with `npm run build` then `npm start` (this compiles TS to JS in `dist/`, then runs it).
+
+Once running, the server will listen on the port configured in `server/index.ts` (commonly `3000`). You can add or modify API routes in `server/routes.ts` as needed.
